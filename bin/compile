@@ -80,7 +80,7 @@ export CPATH="\$CPATH:${CPATH//$BUILD_DIR//app}"
 EOF
 
 wget -q -O /tmp/libpng12.deb http://mirrors.kernel.org/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb \
-  && dpkg -i /tmp/libpng12.deb \
+  && sudo dpkg -i /tmp/libpng12.deb \
   && rm /tmp/libpng12.deb
 
 echo "NOTE: if you are experiencing problems, they may be resulting from a cached"
